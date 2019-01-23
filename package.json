@@ -1,0 +1,23 @@
+{
+  "name": "garbage",
+  "version": "1.0.0",
+  "description": "選択された地域のごみの日を紹介",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oneokrock256/garbage.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oneokrock256/garbage/issues"
+  },
+  "homepage": "https://github.com/oneokrock256/garbage#readme",
+  "dependencies": {
+    "cheerio-httpcli": "^0.7.3",
+    "ejs": "^2.6.1"
+  }
+}
