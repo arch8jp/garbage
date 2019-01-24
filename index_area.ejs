@@ -1,18 +1,29 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <meta http-equiv="content-type" content="text/html ; charset='utf8'">
-        <title>詳細住所選択</title>
-    </head>
 
-    <body>
-        <h1><%= title%></h1>
+<head>
+    <meta http-equiv="content-type" content="text/html ; charset='utf8'">
+    <title>詳細住所選択</title>
+</head>
 
+<body>
+    <h1>
+            <%= city %>
+       
+    </h1>
+    <form method="POST" action="/result">
         <% for(var key in data){%>
-            
-            <input type="radio" name="btn" value= key ><%=data[key]%>
-            
+            <p>
+                <label><input type="radio" name="msg" value="<%= key %>,<%=data[key]%>"><%=data[key]%></label>
+            </p>
+        
         <% } %>
-        z
-    </body>
+        <input type="hidden" name="info" value="<%= city_hidden %>" >
+        <input type="submit" value="送信">
+    </form>
+
+    
+
+</body>
+
 </html>

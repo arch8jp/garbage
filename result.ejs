@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta http-equiv="content-type" content="text/html ; charset='utf8'">
+    <title>詳細住所選択</title>
+</head>
+
+<body>
+    <h1>
+        <%= title%>
+    </h1>
+    <form method="POST" action="/">
+        <% for(var key in data){%>
+           <h2><%= data[key]%> 日は<%= garbage[key] %>の日です </h2> 
+
+        <% } %>
+        <input type="submit" value="戻る">
+    </form>
+</body>
